@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div style={{position: "relative", background: "white", border: "1px solid black", padding: "2rem", margin:"2rem", borderRadius: ".5rem"}}>
       <form action="">
-        <div style={{position: "absolute", top: "5rem", right:"5rem"}}>
+        <div style={{position: "absolute", top: ".5rem", right:".5rem"}}>
           {currentStepIndex + 1}/{steps.length}
         </div>
         {step}
