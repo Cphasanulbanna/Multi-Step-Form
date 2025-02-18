@@ -1,5 +1,5 @@
 
-const AccounForm = () => {
+const AccountForm = () => {
   return (
     <>
     <label htmlFor="">Email</label>
@@ -10,4 +10,4 @@ const AccounForm = () => {
   )
 }
 
-export default AccounForm
+export default AccountForm
