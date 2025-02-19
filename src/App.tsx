@@ -9,7 +9,7 @@ type FormData = {
   lastName: string,
   email: string,
   password: string,
-  age: string,
+  age: number,
   street: string,
   city: string,
   state: string,
@@ -21,7 +21,7 @@ const INITIAL_DATA:FormData = {
   lastName: '',
   email: '',
   password: '',
-  age:'',
+  age:0,
   street:'',
   city: '',
   state: '',
@@ -45,7 +45,9 @@ const App = () => {
 
   const submitForm = (e: FormEvent) => {
     e.preventDefault()
-    next()
+    if(!isLastStep) return next()
+    alert("Account created")
+  
   }
 
 
